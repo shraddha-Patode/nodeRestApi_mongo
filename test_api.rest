@@ -1,0 +1,67 @@
+
+GET  http://localhost:3000/products
+
+###
+POST  http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "productId":"5fbaafd05f578d1cc8d00b2957"
+    
+}
+###
+GET  http://localhost:3000/orders
+
+###
+GET http://localhost:3000/orders/5fbc102b76d7ae3e10c7ca7b
+
+###
+DELETE http://localhost:3000/orders/5fbc102b76d7ae3e10c7ca7b
+
+###
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "email":"test1.com",
+    "password":"testing"
+}
+
+###
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "email":"test1.com",
+    "password":"testing"
+}
+
+###
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "email":"test12.com",
+    "password":"testing"
+}
+###
+//to check email validation
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "email":"test12com",
+    "password":"testing"
+}
+###
+//login
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email":"test1.com",
+    "password":"testing"
+}
+
+###
+DELETE http://localhost:3000/user/5fbd5edc6584880768dae142
